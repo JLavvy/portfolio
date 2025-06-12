@@ -1,15 +1,17 @@
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
+import { Landing } from './pages/Landing'
 
 function App() {
-
 
   return (
     <>
      
-      <p className="text-3xl font-extrabold text-amber-300">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+        </Router>
     </>
   )
 }
