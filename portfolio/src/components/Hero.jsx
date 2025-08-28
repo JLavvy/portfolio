@@ -104,7 +104,7 @@ export const Hero = () => {
             className={`text-3xl md:text-5xl lg:text-6xl font-black opacity-0 ${isLoaded ? 'animate-fade-in [animation-delay:0.5s]' : ''
               }`}
           >
-            <span className="gradient-text">Janice Lavoga</span>
+            <span className="text-primary">Janice Lavoga</span>
           </h1>
 
           <div
@@ -128,7 +128,7 @@ export const Hero = () => {
             className={`flex gap-4 mt-4 opacity-0 ${isLoaded ? 'animate-fade-in [animation-delay:1.1s]' : ''
               }`}
           >
-            <Button asChild className="btn-primary hover:opacity-90 rounded-full px-8 py-6">
+            <Button asChild className="hover:opacity-90 rounded-full px-8 py-6">
               <a href="#projects">View Projects</a>
             </Button>
             <Button asChild variant="outline" className="rounded-full px-8 py-6 border-muted">

@@ -2,44 +2,50 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 
-// Project data
+// Import images from public folder
+import laara from "/laara.jpeg";
+import compass from "/compass.png";
+import crafty from "/Crafty.png";
+import wellverse from "/Wellverse.png";
+
 const projects = [
-  {
+   {
     id: 1,
-    title: "E-commerce Dashboard",
-    description: "A responsive admin dashboard for online retailers with real-time analytics and inventory management",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    demo: "#",
-    repo: "#",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Chart.js"]
+    title: "WellVerse Tech",
+    description: "An innovation-driven company focused on building intelligent tech solutions that transform business operation",
+    image: wellverse, 
+    demo: "https://wellverse-ai.netlify.app/",
+    repo: "https://github.com/JLavvy/Wellverse",
+    tech: ["React", "Tailwind", "Netlify"]
   },
   {
     id: 2,
-    title: "Content Platform",
-    description: "A modern content management system with a focus on performance and user experience",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    demo: "#",
+    title: "Laara Group",
+    description: "A hospitality platform connecting travelers with exceptional accommodations across the country.",
+    image: laara,
+    demo: "https://www.laaragroup.com/",
     repo: "#",
-    tech: ["Next.js", "GraphQL", "Tailwind CSS", "PostgreSQL"]
+    tech: ["React","Tailwind"]
   },
   {
     id: 3,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team features",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    demo: "#",
-    repo: "#",
-    tech: ["React", "Firebase", "Styled Components"]
+    title: "Compass Track Mentors",
+    description: "A modern content management system with a focus on performance and user experience",
+    image: compass, 
+    demo: "https://compasstrackmentors.com/",
+    repo: "https://github.com/JoseMbilwa/CT-Mentors",
+    tech: ["HTML", "CSS", "Javascript"]
   },
   {
     id: 4,
-    title: "Financial Analytics Tool",
-    description: "A data visualization platform providing insights into financial metrics and performance",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    demo: "#",
-    repo: "#",
-    tech: ["React", "D3.js", "Material UI", "REST API"]
+    title: "Crafty Artisan Market",
+    description: "A sample Crafts Website",
+    image: crafty,
+    demo: "https://craftyartisanmarket.web.app/",
+    repo: "https://github.com/JLavvy/Handcrafts",
+    tech: ["React", "Firebase (Hosting)", "Tailwind"]
   }
+ 
 ];
 
 export const Projects = () => {
@@ -104,4 +110,4 @@ export const Projects = () => {
       </div>
     </section>
   );
-}
+};

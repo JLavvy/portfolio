@@ -6,53 +6,41 @@ import developer from "/Update-amico.svg"
 
 const skills = {
     frontend: [
-        "React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS",
-        "Next.js", "Redux", "SCSS/Sass", "GraphQL", "REST APIs", "Responsive Design"
+        "React", "JavaScript", "HTML5", "CSS3", "Tailwind CSS",
+        "Zustand", "REST APIs", "Responsive Design"
     ],
-    design: [
-        "Figma", "Adobe XD", "UI/UX", "Wireframing", "Prototyping",
-        "User Research", "Accessibility", "Color Theory", "Web Animation"
-    ],
+
     tools: [
-        "Git", "Webpack", "Vite", "Jest", "Testing Library", "npm/yarn",
-        "Netlify", "Vercel", "GitHub Actions", "VS Code", "Chrome DevTools"
+        "Git", "Vite", "npm/yarn", "Netlify", "Vercel", "GitHub Actions",
+        "VS Code", "Chrome DevTools"
     ]
 };
 
 const experiences = [
     {
-        role: "Senior Frontend Developer",
-        company: "Tech Solutions Inc.",
-        period: "2022 - Present",
-        description: "Leading frontend development team in creating responsive web applications. Implementing modern React architecture with TypeScript and state management solutions."
+        role: "Junior Frontend Developer",
+        company: "Laara Group Limited",
+        period: "June 2024 - September 2024",
+        description: "Contributed to the development of responsive web pages using React and Tailwind. Collaborated with the front-end team to implement UI components based on design specifications and ensured mobile responsiveness."
     },
-    {
-        role: "UI/UX Developer",
-        company: "Creative Agency",
-        period: "2020 - 2022",
-        description: "Designed and developed user interfaces for e-commerce clients. Created reusable component libraries and design systems."
-    },
-    {
-        role: "Web Developer",
-        company: "Startup Hub",
-        period: "2018 - 2020",
-        description: "Built interactive web applications with JavaScript and CSS frameworks. Collaborated with designers to implement pixel-perfect interfaces."
-    }
+
+    // {
+    //     role: "Web Developer",
+    //     company: "Startup Hub",
+    //     period: "2018 - 2020",
+    //     description: "Built interactive web applications with JavaScript and CSS frameworks. Collaborated with designers to implement pixel-perfect interfaces."
+    // }
 ];
 
 const education = [
     {
-        degree: "Master's in Computer Science",
-        institution: "Tech University",
-        period: "2017 - 2018",
-        description: "Focused on Human-Computer Interaction and Web Technologies."
-    },
-    {
-        degree: "Bachelor's in Web Design",
-        institution: "Design College",
-        period: "2013 - 2017",
-        description: "Studied UI/UX principles, graphic design fundamentals, and frontend development."
+        degree: "Bachelor of Science in Computer Science",
+        institution: "St. Paul's University",
+        period: "2019 - 2023",
+        description: "Studied core computer science subjects including programming, databases, and software engineering."
     }
+
+
 ];
 
 export const About = () => {
@@ -83,51 +71,35 @@ export const About = () => {
 
                     <div className="lg:col-span-3">
                         <div data-aos="fade-up" className="mb-10">
-                            <h3 className="text-2xl font-bold mb-4">
-                                Crafting digital experiences with code and creativity
-                            </h3>
-                            <p className="text-muted-foreground mb-4">
-                                With over 6 years of experience in frontend development, I specialize in creating responsive,
-                                accessible, and performant web applications that deliver exceptional user experiences.
-                            </p>
                             <p className="text-muted-foreground">
-                                My approach combines clean code with creative problem solving. I'm passionate about staying
-                                current with emerging technologies and best practices in the rapidly evolving frontend landscape.
+                                I'm a passionate software developer specializing in JavaScript and React. I love transforming complex challenges into elegant, user-friendly solutions. With a collaborative approach and attention to detail,
+                                I work closely with clients to deliver innovative, high-quality applications. Always eager to learn and adopt new technologies, I'm ready to bring your ideas to life with exceptional results.
                             </p>
                         </div>
 
                         <Tabs value={tab} onValueChange={setTab} className="w-full">
                             <TabsList className="grid w-full grid-cols-3 mb-8">
-                                <TabsTrigger value="skills" className="data-[state=active]:bg-muted">
+                                <TabsTrigger value="skills" className="data-[state=active]:bg-[#A78BFA] data-[state=active]:text-white transition-colors">
                                     <Code className="w-4 h-4 mr-2" />
                                     <span className="hidden md:inline">Skills</span>
                                 </TabsTrigger>
-                                <TabsTrigger value="experience" className="data-[state=active]:bg-muted">
+                                <TabsTrigger value="experience" className="data-[state=active]:bg-[#A78BFA] data-[state=active]:text-white transition-colors">
                                     <Briefcase className="w-4 h-4 mr-2" />
                                     <span className="hidden md:inline">Experience</span>
                                 </TabsTrigger>
-                                <TabsTrigger value="education" className="data-[state=active]:bg-muted">
+                                <TabsTrigger value="education" className="data-[state=active]:bg-[#A78BFA] data-[state=active]:text-white transition-colors">
                                     <User className="w-4 h-4 mr-2" />
                                     <span className="hidden md:inline">Education</span>
                                 </TabsTrigger>
                             </TabsList>
-
+                            
                             {/* Skills Tab */}
                             <TabsContent value="skills" className="mt-0">
                                 <div className="mb-6">
                                     <h4 className="font-semibold mb-4 text-lg">Frontend Development</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {skills.frontend.map(skill => (
-                                            <Badge key={skill} variant="outline" className="skill-pill">{skill}</Badge>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                <div className="mb-6">
-                                    <h4 className="font-semibold mb-4 text-lg">Design</h4>
-                                    <div className="flex flex-wrap gap-2">
-                                        {skills.design.map(skill => (
-                                            <Badge key={skill} variant="outline" className="skill-pill">{skill}</Badge>
+                                            <Badge key={skill} variant="outline" className="skill-pill px-5 py-2">{skill}</Badge>
                                         ))}
                                     </div>
                                 </div>
@@ -136,7 +108,7 @@ export const About = () => {
                                     <h4 className="font-semibold mb-4 text-lg">Tools & Technologies</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {skills.tools.map(skill => (
-                                            <Badge key={skill} variant="outline" className="skill-pill">{skill}</Badge>
+                                            <Badge key={skill} variant="outline" className="skill-pill px-5 py-2">{skill}</Badge>
                                         ))}
                                     </div>
                                 </div>

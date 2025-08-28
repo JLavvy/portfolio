@@ -73,7 +73,7 @@ export const Contact = () => {
     {
       platform: "WhatsApp",
       icon: <MessageCircle className="w-5 h-5" />,
-      href: "https://wa.me/+254788663233" // WhatsApp link using phone number from contactInfo
+      href: "https://wa.me/+254788663233" 
     }
   ];
 
@@ -224,7 +224,7 @@ export const Contact = () => {
                   variant="outline"
                   onClick={handleSubmit}
                   disabled={isSubmitting}
-                  className="w-full btn-primary font-medium py-4 px-8 rounded-lg"
+                  className=" bg-primary font-medium py-4 px-8 rounded-lg"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>

@@ -70,7 +70,7 @@ export const Navbar = () => {
       <nav className="w-full container mx-auto px-6 py-4 sm:px-8 md:px-16 lg:px-20 xl:px-[88px]">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="/" className="text-xl md:text-2xl font-bold gradient-text">
+            <a href="/" className="text-xl md:text-2xl font-bold text-primary">
               Port<span className="font-thin">folio</span>
             </a>
           </div>
